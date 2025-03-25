@@ -6,20 +6,20 @@ const Navbar = () => {
             <div className="navbar-logo">
                 <Link to="/">Logo</Link>
             </div>
-            <ul className="navbar-links">
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/services">Services</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
+            <div className="hidden md:flex items-center justify-center space-x-8">
+            <a href="/" className="text-white hover:text-purple-400 transition-colors">
+              Home
+            </a>
+            <a href="/how-it-works" className="text-white hover:text-purple-400 transition-colors">
+              How it works
+            </a>
+            <a href="/features" className="text-white hover:text-purple-400 transition-colors">
+              Features
+            </a>
+            <a href="/pricing" className="text-white hover:text-purple-400 transition-colors">
+              Premium
+            </a>
+          </div>
         </nav>
     );
 };

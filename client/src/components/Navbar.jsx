@@ -21,10 +21,10 @@ function Navbar() {
           <div className='pl-4'><img width={20} src="/src/assets/Navbar-leaf-logo.png" alt="Navbar-leaf-logo" /></div>
           <div className=''>
            <ul className='px-12 text-white flex items-center space-x-4'>
-            <li> <NavLink href="" className="px-4 text-[15px]" />Home</li>
-            <li> <NavLink href="/features" className="px-4 text-[15px]" />Features</li>
-            <li> <NavLink href="/components/VeggieList" className="px-4 text-[15px]" />Explore Veggies</li>
-            <li> <NavLink href="/pages/LoginSeller" className="px-4 text-[15px]" />For Farmers</li>
+            <li> <NavLink href = "/home" className="px-4 text-[15px]" />Home</li>
+            <li> <NavLink href = "/features" className="px-4 text-[15px]" />Features</li>
+            <li> <NavLink href = "/veggielist" className="px-4 text-[15px]" />Explore Veggies</li>
+            <li> <NavLink href = "/forfarmers" className="px-4 text-[15px]" />For Farmers</li>
            </ul>
           </div>
           {/* Get Started Button */}

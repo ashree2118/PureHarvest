@@ -21,10 +21,30 @@ function Navbar() {
           <div className='pl-4'><img width={20} src="/src/assets/Navbar-leaf-logo.png" alt="Navbar-leaf-logo" /></div>
           <div className=''>
             <ul className='px-12 text-white flex items-center space-x-4'>
-              <li><NavLink to="/home" className="px-4 text-[15px]">Home</NavLink></li>
-              <li><NavLink to="/features" className="px-4 text-[15px]">Features</NavLink></li>
-              <li><NavLink to="/veggielist" className="px-4 text-[15px]">Explore Veggies</NavLink></li>
-              <li><NavLink to="/forfarmers" className="px-4 text-[15px]">For Farmers</NavLink></li>
+              <li><NavLink to="/home" className={({ isActive }) =>
+                `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
+                  ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
+                  : "after:hidden"
+                }`
+              }>Home</NavLink></li>
+              <li><NavLink to="/features" className={({ isActive }) =>
+                `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
+                  ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
+                  : "after:hidden"
+                }`
+              }>Features</NavLink></li>
+              <li><NavLink to="/veggielist" className={({ isActive }) =>
+                `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
+                  ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
+                  : "after:hidden"
+                }`
+              }>Explore Veggies</NavLink></li>
+              <li><NavLink to="/forfarmers" className={({ isActive }) =>
+                `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
+                  ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
+                  : "after:hidden"
+                }`
+              }>For Farmers</NavLink></li>
             </ul>
 
           </div>

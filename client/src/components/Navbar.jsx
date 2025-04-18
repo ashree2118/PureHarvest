@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
-  
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
@@ -20,12 +20,13 @@ function Navbar() {
         <div className="bg-black rounded-full px-3 py-2 flex items-center shadow-lg">
           <div className='pl-4'><img width={20} src="/src/assets/Navbar-leaf-logo.png" alt="Navbar-leaf-logo" /></div>
           <div className=''>
-           <ul className='px-12 text-white flex items-center space-x-4'>
-            <li> <NavLink href = "/home" className="px-4 text-[15px]" />Home</li>
-            <li> <NavLink href = "/features" className="px-4 text-[15px]" />Features</li>
-            <li> <NavLink href = "/veggielist" className="px-4 text-[15px]" />Explore Veggies</li>
-            <li> <NavLink href = "/forfarmers" className="px-4 text-[15px]" />For Farmers</li>
-           </ul>
+            <ul className='px-12 text-white flex items-center space-x-4'>
+              <li><NavLink to="/home" className="px-4 text-[15px]">Home</NavLink></li>
+              <li><NavLink to="/features" className="px-4 text-[15px]">Features</NavLink></li>
+              <li><NavLink to="/veggielist" className="px-4 text-[15px]">Explore Veggies</NavLink></li>
+              <li><NavLink to="/forfarmers" className="px-4 text-[15px]">For Farmers</NavLink></li>
+            </ul>
+
           </div>
           {/* Get Started Button */}
           <button className="bg-transparent border border-white text-white px-4 py-1 rounded-full hover:bg-white hover:text-black transition">
@@ -36,8 +37,8 @@ function Navbar() {
         {/* Right side elements */}
         <div className="flex items-center space-x-4">
           {/* Dark mode toggle */}
-          <button 
-            onClick={toggleDarkMode} 
+          <button
+            onClick={toggleDarkMode}
             className="text-gray-800"
           >
             {darkMode ? (
@@ -50,7 +51,7 @@ function Navbar() {
               </svg>
             )}
           </button>
-          
+
           {/* User profile icon */}
           <div className="w-8 h-8 bg-black rounded-full"></div>
         </div>

@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+
 import App from './App.jsx'
 import { Outlet } from 'react-router-dom'
 import Hero from './pages/Hero.jsx'
@@ -16,13 +16,18 @@ import {
 import Features from './pages/Features.jsx'
 import LoginSeller from './pages/LoginSeller.jsx'
 import ReactDOM from 'react-dom/client'
+import LoginBuyer from './pages/LoginBuyer.jsx'
+
 
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="home" element={<Hero />} />
+      <Route path="" element={<Hero />}>
+        <Route path="login-buyer" element={<LoginBuyer />} />
+        <Route path="login-seller" element={<LoginSeller />} />
+      </Route>
       <Route path="features" element={<Features />} />
       <Route path="veggielist" element={<VeggieList />} />
       <Route path="forfarmers" element={<LoginSeller />} />

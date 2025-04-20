@@ -24,13 +24,11 @@ import LoginBuyer from './pages/LoginBuyer.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<Hero />}>
-        <Route path="login-buyer" element={<LoginBuyer />} />
-        <Route path="login-seller" element={<LoginSeller />} />
-      </Route>
+      <Route path="" element={<Hero />} />
+      <Route path="home" element={<Hero />} />      
       <Route path="features" element={<Features />} />
-      <Route path="veggielist" element={<VeggieList />} />
-      <Route path="forfarmers" element={<LoginSeller />} />
+      <Route path="login-buyer" element={<LoginBuyer />} />
+      <Route path="login-farmer" element={<LoginSeller />} />
     </Route>
   ),
 )

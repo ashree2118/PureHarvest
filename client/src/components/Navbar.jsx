@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full max-w-[1180px] mx-auto p-2">
+    <div className="w-full max-w-[1180px] mx-auto p-2 bg-transparent">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -33,13 +33,13 @@ function Navbar() {
                   : "after:hidden"
                 }`
               }>Features</NavLink></li>
-              <li><NavLink to="/veggielist" className={({ isActive }) =>
+              <li><NavLink to="/login-buyer" className={({ isActive }) =>
                 `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
                   ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
                   : "after:hidden"
                 }`
-              }>Explore Veggies</NavLink></li>
-              <li><NavLink to="/forfarmers" className={({ isActive }) =>
+              }>Browse Farms</NavLink></li>
+              <li><NavLink to="/login-farmer" className={({ isActive }) =>
                 `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
                   ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
                   : "after:hidden"

@@ -1,11 +1,11 @@
 import React from 'react'
 
-function VeggieCard() {
+function InputVeggie() {
   return (
     <div>
-      
+      h1
     </div>
   )
 }
 
-export default VeggieCard
+export default InputVeggie

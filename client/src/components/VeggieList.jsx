@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 const VeggieList = () => {
     const [veggies, setVeggies] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
 
     // Fetch data from a placeholder API (simulate veggie listings)
     useEffect(() => {
@@ -13,6 +15,7 @@ const VeggieList = () => {
             .then((response) => {
                 setVeggies(response.data);
                 setLoading(false);
+                setError(null);
             })
             .catch((err) => {
                 setError('Failed to load data.');

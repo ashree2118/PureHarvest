@@ -77,7 +77,7 @@ function Faq() {
                                     <span className="font-medium text-lg">{item.question}</span>
                                     <ChevronRight
                                         className={`transition-transform duration-300 ${openItem === item.id ? 'transform rotate-90' : ''}`}
-                                        size={20}
+                                        size=
                                     />
                                 </button>
 

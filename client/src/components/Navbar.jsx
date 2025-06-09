@@ -33,7 +33,7 @@ function Navbar() {
                   : "after:hidden"
                 }`
               }>Features</NavLink></li>
-              <li><NavLink to="/login-buyer" className={({ isActive }) =>
+              <li><NavLink to="/farms" className={({ isActive }) =>
                 `relative px-4 text-[15px] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-[40px] ${isActive
                   ? "after:bg-[linear-gradient(to_right,#8B4513_50%,#228B22_50%)]"
                   : "after:hidden"

@@ -1,10 +1,93 @@
 import React from 'react';
 import Features from './Features';
-import Faq from '../components/Faq';
+
+import ViewFarms from '../pages/buyer/ViewFarms';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <><div className="bg-gray-50 min-h-screen relative overflow-hidden">
+        <>
+            {/*<div className="font-sans">
+              
+               <header className="flex justify-between items-center p-4 bg-green-700 text-white">
+                <h1 className="text-2xl font-bold">OrganicHub</h1>
+                <nav className="space-x-4">
+                  <Link to="/" className="hover:underline">Home</Link>
+                  <Link to="/browse" className="hover:underline">Browse Farms</Link>
+                  <Link to="/about" className="hover:underline">About</Link>
+                  <Link to="/contact" className="hover:underline">Contact</Link>
+                </nav>
+                <div className="space-x-2">
+                  <Link to="/login" className="bg-white text-green-700 px-4 py-1 rounded hover:bg-green-100">Login</Link>
+                  <Link to="/register" className="bg-white text-green-700 px-4 py-1 rounded hover:bg-green-100">Register</Link>
+                </div>
+              </header> */
+        
+            /* Hero Section */
+              /* <section className="text-center py-20 bg-green-50">
+                <h2 className="text-4xl font-bold mb-4">Fresh Organic Produce from Local Farms</h2>
+                <p className="text-lg text-gray-700 mb-6">Connecting buyers with trusted local farmers every day.</p>
+                <div className="space-x-4">
+                  <Link to="/farm" className="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">Browse Farms</Link>
+                  <Link to="/" className="bg-white text-green-700 border border-green-700 px-6 py-2 rounded hover:bg-green-100">Join as Farmer</Link>
+                </div>
+              </section>
+        
+              
+              <section className="py-16 px-4 bg-white">
+                <h3 className="text-3xl text-center font-semibold mb-10">How It Works</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                  <div>
+                    <h4 className="text-xl font-semibold mb-2">For Buyers</h4>
+                    <ul className="list-disc list-inside text-gray-700">
+                      <li>Find nearby organic farms</li>
+                      <li>Browse daily fresh produce</li>
+                      <li>Add items to your cart & place orders</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold mb-2">For Farmers</h4>
+                    <ul className="list-disc list-inside text-gray-700">
+                      <li>Create a farm profile</li>
+                      <li>Update your daily inventory</li>
+                      <li>Receive and manage orders</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <Features /> 
+              </section>
+            
+              <section className="py-16 bg-green-50 px-4">
+                <h3 className="text-3xl text-center font-semibold mb-10">Explore Popular Farms</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6  mx-auto">
+                  <ViewFarms />
+                </div>
+              </section>
+        
+              
+              <section className="py-16 bg-white px-4">
+                <h3 className="text-3xl text-center font-semibold mb-10">What People Say</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-gray-700">
+                  <blockquote className="italic border-l-4 border-green-700 pl-4">
+                    “I love being able to support local farmers and get super fresh veggies.”
+                    <div className="mt-2 text-sm">– Ananya, Buyer</div>
+                  </blockquote>
+                  <blockquote className="italic border-l-4 border-green-700 pl-4">
+                    “OrganicHub helped me sell out every morning! Super easy to use.”
+                    <div className="mt-2 text-sm">– Ramesh, Farmer</div>
+                  </blockquote>
+                </div>
+              </section>
+        
+              
+              
+            </div> */}
+        
+        
+        
+        <React.Fragment><div className="bg-gray-50 min-h-screen relative overflow-hidden">
             {/* Grid background */}
             <div className="absolute inset-0 grid grid-cols-24 grid-rows-24">
                 {Array(24).fill(0).map((_, rowIndex) => (
@@ -143,8 +226,9 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <Features /> {/* Include the Features component here */}
-            <Faq /> {/* Include the FAQ component here */}
+                <Features /> {/* Include the Features component here */}
+            </React.Fragment>
+            
             </>
     );
 };
